@@ -51,6 +51,24 @@ function bookCard() {
     });
 }
 
+content.addEventListener("click", (e) => {
+    const card = e.target.closest(".card-box");
+    if (!card) return;
+    const id = card.dataset.id;
+
+    if (e.target.classList.contains("delete-btn")) {
+        const index = myLibrary.findIndex((book) => book.id === id);
+        myLibrary.splice(index, 1);
+        bookCard();
+    }
+
+    if (e.target.classList.contains("read-btn")) {
+        const book = myLibrary.find((book) => book.id === id);
+        book.read = !book.read;
+        bookCard();
+    }
+});
+
 addBookToLibrary("The Invisible Man", "H.G. Wells", 208, true);
 addBookToLibrary("1984", "George Orwell", 328, false);
 addBookToLibrary("The Hobbit", "J.R.R. Tolkien", 310, true);
