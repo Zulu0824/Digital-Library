@@ -42,6 +42,8 @@ body {
     font-size: 2rem;
     color: #ECA400;
     font-family: "Playwrite ID";
+    letter-spacing: 1px; 
+    text-shadow: 2px 2px 0px rgba(0,0,0,0.2);
 }
 
 #add-book{
@@ -89,14 +91,16 @@ form div:nth-of-type(-n+5){
 
 .form-heading {
     font-size: 2rem;
+    justify-self: center;
+    margin-bottom: 15px;
 }
 label {
     font-size: 1.3rem;
 }
 
 .input-fields {
-    font-size: 1.1rem;
-    padding: 10px 24px;
+    font-size: 1.2rem;
+    padding: 10px 20px;
     outline: none;
     border: 1px solid #001D4A;
     border-radius: 5px;
@@ -114,4 +118,45 @@ label {
 
 #read-check label {
     align-self: center;
+}
+
+.dialog-btn-box {
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-evenly;
+}
+
+#submit-btn, #cancel-btn {
+    padding: 10px 24px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.2s ease;
+}
+
+#submit-btn {
+    background-color: #001D4A;
+    color: white;
+    /* border: 1px solid #fffefb; */
+}
+
+#submit-btn:hover {
+    background-color: white;
+    /* border: 1px solid #001D4A; */
+    color: #001D4A;
+}
+
+#cancel-btn {
+    background-color: rgb(245, 245, 245);
+    /* border: 1px solid #001D4A; */
+    color: #001D4A;
+}
+
+#cancel-btn:hover {
+    background-color: #001D4A;
+    color: white;
+    /* border: 1px solid white; */
 }
