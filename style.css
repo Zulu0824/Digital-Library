@@ -42,3 +42,21 @@ body {
     color: #ECA400;
     font-family: "Playwrite ID";
 }
+
+#add-book{
+    padding: 12px 30px;
+    font-size: 1.8rem;
+    border: 2px solid #ECA400;
+    outline: none;
+    border-radius: 10px;
+    background-color: #437bbe;
+    font-weight: 500;
+    font-family: inherit;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+#add-book:hover {
+    background-color: #ECA400;
+    border: 2px solid rgb(255, 255, 255);
+}
