@@ -50,7 +50,6 @@ function bookCard() {
         content.appendChild(clone);
     });
 }
-
 content.addEventListener("click", (e) => {
     const card = e.target.closest(".card-box");
     if (!card) return;
