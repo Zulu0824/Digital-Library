@@ -14,6 +14,7 @@ body {
 .container {
     display: grid;
     grid-template-rows: 150px 1fr;
+    position: relative;
 }
 
 .header-section {
@@ -59,4 +60,23 @@ body {
 #add-book:hover {
     background-color: #ECA400;
     border: 2px solid rgb(255, 255, 255);
+}
+
+/* ---dialog/form section--- */
+
+dialog {
+    position: absolute;
+    justify-self: center;
+    align-self: center;
+}
+
+form {
+    display: grid;
+    grid-template-columns: repeat(1fr, auto);
+    gap: ;
+}
+
+form div:nth-of-type(-n+4){
+    display: flex;
+    flex-direction: column;
 }
